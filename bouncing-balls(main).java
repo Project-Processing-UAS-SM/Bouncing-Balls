@@ -8,7 +8,7 @@
  
 int numBalls = 12;
 float spring = 0.05;
-float gravity = 0.03;
+float gravity;
 float friction = -0.9;
 Ball[] balls = new Ball[numBalls];
 
