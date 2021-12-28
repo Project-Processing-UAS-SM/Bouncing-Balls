@@ -16,9 +16,10 @@ void setup() {
   size(640, 360);
   for (int i = 0; i < numBalls; i++) {
     balls[i] = new Ball(random(width), random(height), random(30, 70),i, balls);
+    fill(random(255), random(255), random(255));
   }
   noStroke();
-  fill(255, 204);
+  
 }
 
 void draw() {
