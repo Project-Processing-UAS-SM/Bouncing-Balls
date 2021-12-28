@@ -76,18 +76,23 @@ class Ball {
     if (x + diameter/2 > width) {
       x = width - diameter/2;
       vx *= friction; 
+     fill(random(255), random(255), random(255))
+     
     }
     else if (x - diameter/2 < 0) {
       x = diameter/2;
       vx *= friction;
+     fill(random(255), random(255), random(255))
     }
     if (y + diameter/2 > height) {
       y = height - diameter/2;
       vy *= friction; 
+     fill(random(255), random(255), random(255))
     } 
     else if (y - diameter/2 < 0) {
       y = diameter/2;
       vy *= friction;
+     fill(random(255), random(255), random(255))
     }
   }
   
