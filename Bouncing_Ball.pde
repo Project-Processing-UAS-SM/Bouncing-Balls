@@ -7,12 +7,19 @@ ParticleSystem ps;
 
 void setup(){
 size(800,800);
-for(int i = 0; i < balls.length; i++){
-balls[i] = new Ball(random(width), random(height), random(30, 70), i, balls);
-ps = new ParticleSystem(new PVector(width/2, 50));
-}
+resetPage();
 }
 
+void keyPressed(){
+  resetPage();
+}
+
+void resetPage(){
+  for(int i = 0; i < balls.length; i++){
+  balls[i] = new Ball(random(width), random(height), random(30, 70), i, balls);
+  ps = new ParticleSystem(new PVector(width/2, 50));
+  }
+}
 
 void draw(){
   background(0);
